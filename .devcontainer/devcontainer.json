@@ -1,0 +1,28 @@
+{
+  "name": "Data Analysis Environment",
+  "dockerFile": "Dockerfile",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.data-wrangler",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.jupyter-keymap",
+        "ms-python.black-formatter",
+        "ms-toolsai.datawrangler"
+      ]
+    }
+  },
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+
+  "remoteUser": "vscode"
+}
