@@ -1,6 +1,7 @@
-def main():
-    print("Hello from airp-backend!")
+from fastapi import FastAPI
 
+from . import users
 
-if __name__ == "__main__":
-    main()
+app = FastAPI()
+
+app.include_router(users.router)

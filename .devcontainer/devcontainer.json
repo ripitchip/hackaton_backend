@@ -12,8 +12,21 @@
         "ms-toolsai.jupyter-renderers",
         "ms-toolsai.jupyter-keymap",
         "ms-python.black-formatter",
-        "ms-toolsai.datawrangler"
-      ]
+        "ms-toolsai.datawrangler",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        "settings": {
+          "[python]": {
+            "editor.formatOnSave": true,
+            "editor.codeActionsOnSave": {
+              "source.organizeImports": "explicit",
+              "source.fixAll": "explicit"
+            },
+            "editor.defaultFormatter": "charliermarsh.ruff"
+          }
+        }
+      }
     }
   },
 
