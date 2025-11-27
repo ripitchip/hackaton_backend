@@ -13,7 +13,8 @@
         "ms-toolsai.jupyter-keymap",
         "ms-python.black-formatter",
         "ms-toolsai.datawrangler",
-        "charliermarsh.ruff"
+        "charliermarsh.ruff",
+        "mtxr.sqltools-driver-sqlite"
       ],
       "settings": {
         "settings": {
