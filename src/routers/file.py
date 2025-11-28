@@ -1,20 +1,20 @@
-from fastapi import APIRouter, UploadFile, HTTPException
-import pandas as pd
-import sqlite3
-from io import BytesIO
-import os
 import json
+import os
+import sqlite3
 import tempfile
+from io import BytesIO
+
+import pandas as pd
+from fastapi import APIRouter, HTTPException, UploadFile
 
 # Optional: load .env automatically
 try:
     from dotenv import load_dotenv
     load_dotenv()
-except:
+except Exception:
     pass
 
 import google.generativeai as genai
-
 
 router = APIRouter(
     prefix="/file",
